@@ -7,7 +7,6 @@
   <meta name="description" content="Choo! has no accounts, no ads and no analytics, and collects no personal data. Your exact location never leaves your phone. Here's exactly what the app sends, and when.">
   <meta name="theme-color" content="#fffbef" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0b1530" media="(prefers-color-scheme: dark)">
-  <!-- TODO(owner): real domain. -->
   <link rel="canonical" href="https://choo.express/privacy.html">
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/icon-180.png">
@@ -47,7 +46,7 @@
         <li><strong>No accounts.</strong> There's nothing to sign up for, and Choo! never asks for your name, email or phone number.</li>
         <li><strong>No ads, analytics, crash reporting or tracking.</strong> The app contains no advertising or analytics code and doesn't use Apple's advertising identifier.</li>
         <li><strong>Your exact location stays on your phone.</strong> It's used to show spots near you and to keep a Lock Screen Live Activity up to date, and it's never sent to us. To show trains moving on the map, the app asks the Choo server about the part of the map on screen, rounded to about half a kilometre. While the map is following you, that's roughly where you are. The server doesn't record it.</li>
-        <li><strong>Your spots stay on your phone</strong>, unless you send an issue report (see below).</li>
+        <li><strong>Your spots stay on your phone</strong>, unless you follow one on your Lock Screen (the server is told where it is, to keep that Live Activity up to date, and forgets it when it ends) or send an issue report (see below).</li>
         <li><strong>Issue reports are only sent when you tap Send.</strong> They help put things right, and contain no account or contact details.</li>
       </ul>
     </div>
@@ -65,12 +64,13 @@
     <p>Deleting the app deletes all of this.</p>
 
     <h2>What the app sends, and to whom</h2>
-    <p>To show train times, the app has to ask for them. These requests are about trains and places on the railway, not about you, and they don't include your location, your name or any identifier for you or your phone.</p>
+    <p>To show train times, the app has to ask for them. These requests are about trains and places on the railway, not about you, and they don't include your location, your name or any identifier for you or your phone, apart from a followed Live Activity's push token (below).</p>
     <div class="table-scroll">
       <table>
         <thead><tr><th scope="col">Who</th><th scope="col">What the app sends</th><th scope="col">Why</th></tr></thead>
         <tbody>
           <tr><td><strong>The Choo server</strong> (ours, hosted by Fly.io in London)</td><td>For each of your spots: the stations either side and how far along between them it is, or for a Tube spot, the station and line. While you watch a spot: the area of the map around it. While you look around the map: the part of it on screen, rounded to about half a kilometre, to show the trains there. When you add a spot: where you put it, to find the nearest railway line. The id of a train you tap. The app's build number.</td><td>To answer with the trains passing your spots, where they are now, and their journeys; and to check your version of the app still works with the server.</td></tr>
+          <tr><td><strong>The Choo server</strong>, while you follow a spot on your Lock Screen</td><td>That spot: where it is, its directions and how they're set up, and your phone's time zone and clock setting. The Live Activity's push token from Apple. The app's build number.</td><td>To keep the Live Activity up to date through Apple's push service while the app isn't running. The server keeps this on its disk only until the Live Activity ends (at most 45 minutes), then deletes it.</td></tr>
           <tr><td><strong>Transport for London</strong> (TfL Unified API)</td><td>A station and line, only if the Choo server can't answer for a Tube spot.</td><td>To get Tube, DLR, Overground and Elizabeth line times directly.</td></tr>
           <tr><td><strong>OpenStreetMap</strong> (public Overpass servers)</td><td>The place on the map where you're adding or watching a spot (not your own location).</td><td>To find the nearest railway line and its shape.</td></tr>
           <tr><td><strong>Wikipedia</strong></td><td>The name of a type of train, e.g. "Class 450".</td><td>To show a picture and a line about that type of train.</td></tr>
@@ -80,7 +80,7 @@
     </div>
 
     <h3>IP addresses</h3>
-    <p>Like any request on the internet, each one carries your internet (IP) address, which the service receiving it can see. The Choo server uses it only to limit how many requests one address can make, so the service stays up for everyone. It's held only in the server's memory for that, never written to disk or logged, and discarded when the server restarts or needs the room. The server doesn't keep a log of the requests themselves. Fly.io, which hosts the server, processes requests to deliver them, under <a href="https://fly.io/legal/privacy-policy">its own privacy policy</a>. TfL, OpenStreetMap's servers, Wikipedia and Apple see your IP address when the app contacts them, under their own policies.</p>
+    <p>Like any request on the internet, each one carries your internet (IP) address, which the service receiving it can see. The Choo server uses it only to limit how many requests one address can make, so the service stays up for everyone. It's held only in the server's memory for that, never logged, and discarded when the server restarts or needs the room. The one exception: while you follow a spot on your Lock Screen, the server keeps a short hash of the address with that Live Activity, on its disk, to limit how many one address can start, and deletes it when the Live Activity ends. The server doesn't keep a log of the requests themselves. Fly.io, which hosts the server, processes requests to deliver them, under <a href="https://fly.io/legal/privacy-policy">its own privacy policy</a>. TfL, OpenStreetMap's servers, Wikipedia and Apple see your IP address when the app contacts them, under their own policies.</p>
 
     <h2 id="issue-reports">Issue reports</h2>
     <p>If something looks wrong, you can choose "Report an Issue" (from Settings, from a spot or a train, or by shaking your phone). Nothing is sent until you write a note and tap <strong>Send</strong>. If it can't be sent straight away (no signal on a footbridge, say), it's saved on your phone and sent the next time Choo! opens.</p>
