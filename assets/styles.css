@@ -156,7 +156,7 @@ p { margin: 0 0 1em; }
 .cloud::after { width: 54px; height: 54px; left: 82px; top: -22px; }
 .cloud.c1 { top: 70px; left: 6%; }
 .cloud.c2 { top: 150px; left: 46%; transform: scale(.7); opacity: .75; }
-@media (prefers-color-scheme: dark) { .cloud { opacity: .12; } }
+@media (prefers-color-scheme: dark) { .cloud, .cloud.c2 { opacity: .12; } }
 @media (prefers-reduced-motion: no-preference) {
   .cloud.c1 { animation: drift 60s linear infinite alternate; }
   .cloud.c2 { animation: drift 80s linear infinite alternate-reverse; }
