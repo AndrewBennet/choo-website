@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Choo! app icon: a yellow train coming down the track towards you">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3CBD7E"/><stop offset="1" stop-color="#178553"/></linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD642"/><stop offset="1" stop-color="#FF941F"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#33579E"/><stop offset="1" stop-color="#0F1F47"/></linearGradient>
+    <clipPath id="sq"><rect width="1024" height="1024" rx="228"/></clipPath>
+  </defs>
+  <g clip-path="url(#sq)">
+    <rect width="1024" height="1024" fill="url(#bg)"/>
+    <path fill="#FFFFFF" fill-opacity=".45" d="M345 856 L679 856 L679 876 L345 876 Z M290 926 L734 926 L734 952 L290 952 Z M235 996 L789 996 L789 1024 L235 1024 Z"/>
+    <path fill="#FFFFFF" fill-opacity=".95" d="M400 820 L424 820 L300 1024 L250 1024 Z M600 820 L624 820 L774 1024 L724 1024 Z"/>
+    <path fill="url(#body)" d="M292 780 L292 380 Q292 220 452 210 L572 210 Q732 220 732 380 L732 780 Q732 820 692 820 L332 820 Q292 820 292 780 Z"/>
+    <path fill="#FFFFFF" fill-opacity=".9" d="M292 560 L732 560 L732 610 L292 610 Z"/>
+    <path fill="url(#glass)" d="M342 330 Q346 270 420 264 L604 264 Q678 270 682 330 L682 470 Q682 500 652 500 L372 500 Q342 500 342 470 Z"/>
+    <circle fill="#FFFAE0" cx="380" cy="700" r="40"/><circle fill="#FFFAE0" cx="644" cy="700" r="40"/>
+  </g>
+</svg>

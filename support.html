@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Help and contact · Choo!</title>
+  <meta name="description" content="Help with Choo!: adding spots, getting the countdown just right, notifications for unusual trains, and how to get in touch.">
+  <meta name="theme-color" content="#fffbef" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1530" media="(prefers-color-scheme: dark)">
+  <!-- TODO(owner): real domain. -->
+  <link rel="canonical" href="https://choo.app/support">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-180.png">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Choo! home"><img src="assets/icon.svg" alt="" width="36" height="36">Choo!</a>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="./">Home</a>
+      <a href="support.html" aria-current="page">Help</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+  <div class="progress" aria-hidden="true">
+    <svg class="progress-train" viewBox="0 0 46 12"><rect x="0" y="2" width="13" height="8" rx="2" fill="#ff941f"/><rect x="15" y="2" width="13" height="8" rx="2" fill="#ffd642"/><path d="M30 2h10q6 0 6 6v2H30z" fill="#ffd642"/><rect x="38" y="3.5" width="5" height="3" rx="1" fill="#0f1f47"/></svg>
+  </div>
+</header>
+
+<main id="main">
+  <div class="page-hero">
+    <div class="wrap prose">
+      <span class="eyebrow">Help</span>
+      <h1>How can we help?</h1>
+      <p class="lede">Answers to the usual questions are below. Found a great place to watch trains, or a countdown that's out? We'd love to hear.</p>
+    </div>
+  </div>
+
+  <div class="wrap prose">
+    <div class="summary contact-card" id="contact">
+      <div>
+        <h2 style="margin:0 0 .2em">Get in touch</h2>
+        <p style="margin:0">Email us, and we'll reply as soon as we can.</p>
+      </div>
+      <div>
+        <!-- TODO(owner): confirm the support address and that its inbox is monitored. App Store Connect's Support URL must lead to real contact details. -->
+        <a class="mail todo" href="mailto:hello@choo.app">hello@choo.app</a><span class="todo-note">TODO: confirm address</span>
+      </div>
+    </div>
+    <p style="margin-top:16px">If something in the app looks wrong, the quickest way to tell us is <strong>Report an Issue</strong> in the app (see below): it sends what we need to see what happened.</p>
+
+    <h2 id="faq">Questions</h2>
+    <div class="faq">
+      <details open>
+        <summary>I've opened Choo! and there are no spots. Where are they?</summary>
+        <div><p>Choo! doesn't come with spots: you choose your own, anywhere you can stand beside a railway. Long-press the map where you'll stand (or tap <strong>+</strong>, tap the map, then <strong>Next</strong>).</p></div>
+      </details>
+      <details>
+        <summary>How do I add a spot?</summary>
+        <div>
+          <ol>
+            <li>Long-press the map where you'll stand. Choo! suggests a name from the street.</li>
+            <li>It finds the nearest railway, and picks National Rail or Tube &amp; TfL and the line for you.</li>
+            <li><strong>National Rail:</strong> choose the nearest station, and the very next station along the line past your spot, so no junction comes between them. <strong>Tube &amp; TfL:</strong> choose the station, the line, and the station on the other side of your spot.</li>
+            <li>Tap <strong>Check for Trains</strong> to see what's due each way before you add it. "No trains due" usually means a different station is needed.</li>
+          </ol>
+          <p>To change a spot later, open the list (top left), where you can also reorder and delete spots.</p>
+        </div>
+      </details>
+      <details>
+        <summary>The countdown is a little early or late at my spot. Can I fix it?</summary>
+        <div><p>Yes. When a train passes, tap <strong>A train just passed</strong> on the spot's details. Choo! learns from your last few taps in each direction and fine-tunes that spot's timings. You can also edit a spot's timings by hand, in 5-second steps.</p></div>
+      </details>
+      <details>
+        <summary>How accurate are the times?</summary>
+        <div><p>Times are estimates, worked out from the timetable and where each train has been seen. In the last couple of minutes before a National Rail train reaches your spot, its time comes straight from the railway's signalling, so the countdown can jump a little as it gets more precise. Trains can be held at signals or stations, so it's worth keeping an eye out for a minute either way.</p></div>
+      </details>
+      <details>
+        <summary>Which trains does Choo! know about?</summary>
+        <div><p>National Rail trains across Great Britain, including trains that don't stop, freight and empty trains; and in London, the Tube, DLR, Overground and Elizabeth line. Trains in Northern Ireland, heritage railways, and trams aren't included.</p></div>
+      </details>
+      <details>
+        <summary>How do I get a heads-up for freight, test and other unusual trains?</summary>
+        <div><p>Allow notifications when Choo! asks. You'll get one 5 minutes before an unusual train (freight, test, charter, leaf-clearing and so on) passes a spot, for the next couple of hours after you last had Choo! open. Each kind can be turned on or off in Choo!'s Settings.</p></div>
+      </details>
+      <details>
+        <summary>How do I put the countdown on my Lock Screen?</summary>
+        <div><p>Open a spot and choose <strong>Follow on the Lock Screen</strong>. The countdown then shows on your Lock Screen and in the Dynamic Island while you walk there. There are Home Screen and Lock Screen widgets too: add them as you would any other widget.</p></div>
+      </details>
+      <details>
+        <summary>Why does the train on the map cut corners?</summary>
+        <div><p>Choo! draws trains along the real shape of the track where it has it, which so far is south-west London. Elsewhere, a train moves in a straight line between the places it's timed, so on a curvy line it can look like it's taking a shortcut. The countdown isn't affected.</p></div>
+      </details>
+      <details>
+        <summary>Something looks wrong. How do I report it?</summary>
+        <div><p>Use <strong>Report an Issue</strong>: it's in Settings, on a spot or a train, or shake your phone. Write a note about what went wrong and tap Send. It sends the last two hours of what the app received and showed, a screenshot if you choose, and your spots, with no account or contact details. The <a href="privacy.html#issue-reports">privacy policy</a> has the details.</p></div>
+      </details>
+      <details>
+        <summary>Is Choo! free?</summary>
+        <div><p>Choo! is free to download, with no ads, no accounts and no tracking. It's on TestFlight now, Apple's way of trying apps before they're on the App Store.</p></div>
+      </details>
+      <details>
+        <summary>Is it OK for my child to use?</summary>
+        <div><p>Choo! is made for a grown-up to hold while you watch together. Please watch from public places behind a fence or barrier, never on or near the tracks, and hold little hands near the railway.</p></div>
+      </details>
+      <details>
+        <summary>Is Choo! an official railway app?</summary>
+        <div><p>No. Choo! is independent, and isn't affiliated with or endorsed by Transport for London, Network Rail, National Rail or any train company. It uses their open data, credited at the bottom of <a href="./#credits">the home page</a> and in the app's Settings.</p></div>
+      </details>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-bottom" style="margin-top:0;border-top:0;padding-top:0">
+      <span>© 2026 Andrew Bennet. Choo! is independent, and isn't affiliated with or endorsed by Transport for London, Network Rail, National Rail or any train company.</span>
+      <span><a href="./">Home</a> · <a href="support.html">Help</a> · <a href="privacy.html">Privacy</a></span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

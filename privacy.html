@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy · Choo!</title>
+  <meta name="description" content="Choo! has no accounts, no ads and no analytics, and collects no personal data. Your location stays on your phone. Here's exactly what the app sends, and when.">
+  <meta name="theme-color" content="#fffbef" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1530" media="(prefers-color-scheme: dark)">
+  <!-- TODO(owner): real domain. -->
+  <link rel="canonical" href="https://choo.app/privacy">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-180.png">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Choo! home"><img src="assets/icon.svg" alt="" width="36" height="36">Choo!</a>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="./">Home</a>
+      <a href="support.html">Help</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+    </nav>
+  </div>
+  <div class="progress" aria-hidden="true">
+    <svg class="progress-train" viewBox="0 0 46 12"><rect x="0" y="2" width="13" height="8" rx="2" fill="#ff941f"/><rect x="15" y="2" width="13" height="8" rx="2" fill="#ffd642"/><path d="M30 2h10q6 0 6 6v2H30z" fill="#ffd642"/><rect x="38" y="3.5" width="5" height="3" rx="1" fill="#0f1f47"/></svg>
+  </div>
+</header>
+
+<main id="main">
+  <div class="page-hero">
+    <div class="wrap prose">
+      <span class="eyebrow">Privacy policy</span>
+      <h1>Your trains, not your data.</h1>
+      <p class="lede">Choo! has no accounts, no ads and no analytics. It doesn't collect personal data, and your location stays on your phone. This page says exactly what the app sends, to whom, and when.</p>
+      <p class="fine">Last updated 30 October 2026. Applies to the Choo! iPhone app (including its widgets and Live Activity), the Choo server it talks to, and this website.</p>
+    </div>
+  </div>
+
+  <div class="wrap prose">
+    <div class="summary">
+      <h2 style="margin-top:0">The short version</h2>
+      <ul>
+        <li><strong>No accounts.</strong> There's nothing to sign up for, and Choo! never asks for your name, email or phone number.</li>
+        <li><strong>No ads, analytics, crash reporting or tracking.</strong> The app contains no advertising or analytics code and doesn't use Apple's advertising identifier.</li>
+        <li><strong>Your location stays on your phone.</strong> It's used to show spots near you and to keep a Lock Screen Live Activity up to date. It's never sent to us.</li>
+        <li><strong>Your spots stay on your phone</strong>, unless you send an issue report (see below).</li>
+        <li><strong>Issue reports are only sent when you tap Send.</strong> They help put things right, and contain no account or contact details.</li>
+      </ul>
+    </div>
+
+    <h2>Who we are</h2>
+    <p>Choo! is made by Andrew Bennet, an independent developer in the UK, who is responsible for the data described here. You can get in touch at <a class="todo" href="mailto:hello@choo.app">hello@choo.app</a><span class="todo-note">TODO: confirm address</span>.</p>
+
+    <h2>What stays on your phone</h2>
+    <ul>
+      <li><strong>Your location.</strong> If you allow it, Choo! uses your location on the phone to show where you are on the map, to show and refresh the spots near you, and, while you follow a spot on your Lock Screen, to keep that Live Activity running and up to date as you walk there. Your location is never sent to the Choo server or anyone else by Choo!. You can turn it off in Settings › Privacy &amp; Security › Location Services; Choo! still works, but won't know which spots are near you.</li>
+      <li><strong>Your spots</strong> (their names, where they are and how they're set up), and the times you tap "A train just passed", which Choo! uses to fine-tune each spot's timings. They're kept in the app and shared with its own widgets.</li>
+      <li><strong>Notifications</strong> about unusual trains are scheduled on your phone from the times the app already has. No push notification service is involved.</li>
+      <li><strong>A short recording for issue reports.</strong> So that a problem can be looked into afterwards, the app keeps the last two hours of what it received from the server and what it showed on screen (up to about 20 MB), in its caches on your phone. Older parts are deleted as it goes. It only leaves your phone if you send an issue report.</li>
+    </ul>
+    <p>Deleting the app deletes all of this.</p>
+
+    <h2>What the app sends, and to whom</h2>
+    <p>To show train times, the app has to ask for them. These requests are about trains and places on the railway, not about you, and they don't include your location, your name or any identifier for you or your phone.</p>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th scope="col">Who</th><th scope="col">What the app sends</th><th scope="col">Why</th></tr></thead>
+        <tbody>
+          <tr><td><strong>The Choo server</strong> (ours, hosted by Fly.io in London)</td><td>For each of your spots: the stations either side and how far along between them it is, or for a Tube spot, the station and line. While you watch a spot: the area of the map around it. The id of a train you tap. The app's build number.</td><td>To answer with the trains passing your spots, where they are now, and their journeys; and to check your version of the app still works with the server.</td></tr>
+          <tr><td><strong>Transport for London</strong> (TfL Unified API)</td><td>A station and line, only if the Choo server can't answer for a Tube spot.</td><td>To get Tube, DLR, Overground and Elizabeth line times directly.</td></tr>
+          <tr><td><strong>OpenStreetMap</strong> (public Overpass servers)</td><td>The place on the map where you're adding or watching a spot (not your own location).</td><td>To find the nearest railway line and its shape.</td></tr>
+          <tr><td><strong>Wikipedia</strong></td><td>The name of a type of train, e.g. "Class 450".</td><td>To show a picture and a line about that type of train.</td></tr>
+          <tr><td><strong>Apple</strong> (Apple Maps)</td><td>Map tiles, and anything you type into search.</td><td>To draw the map and find places and postcodes. Apple handles this under <a href="https://www.apple.com/legal/privacy/">its own privacy policy</a>.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>IP addresses</h3>
+    <p>Like any request on the internet, each one carries your internet (IP) address, which the service receiving it can see. The Choo server uses it only to limit how many requests one address can make, so the service stays up for everyone. It's held only in the server's memory for that, never written to disk or logged, and discarded when the server restarts or needs the room. The server doesn't keep a log of the requests themselves. Fly.io, which hosts the server, processes requests to deliver them, under <a href="https://fly.io/legal/privacy-policy">its own privacy policy</a>. TfL, OpenStreetMap's servers, Wikipedia and Apple see your IP address when the app contacts them, under their own policies.</p>
+
+    <h2 id="issue-reports">Issue reports</h2>
+    <p>If something looks wrong, you can choose "Report an Issue" (from Settings, from a spot or a train, or by shaking your phone). Nothing is sent until you write a note and tap <strong>Send</strong>. If it can't be sent straight away (no signal on a footbridge, say), it's saved on your phone and sent the next time Choo! opens.</p>
+    <p>A report contains:</p>
+    <ul>
+      <li>the last two hours of what the app received from the Choo server (and from TfL, if it asked) and what it showed on screen, including when you opened spots and trains, and the positions of spots and of the map that those requests already contained;</li>
+      <li>your note, and the spot and train it's about, if you pick them;</li>
+      <li>a screenshot of the app, unless you choose "None";</li>
+      <li>your saved spots, with their names, where they are and how they're set up;</li>
+      <li>the app's version and build, your iPhone's model, its iOS version, and its language, region and time zone setting.</li>
+    </ul>
+    <p>It doesn't contain your location, an account, your name or contact details, unless you type them into the note. Please don't.</p>
+    <p>Reports are kept on the Choo server's disk, as sent, so they can be read to find and fix problems. They're read only for that. When all the reports kept together pass 300 MB, the oldest are deleted to make room. They aren't shared with anyone else. If you'd like a report deleted sooner, email us with roughly when you sent it and what your note said, and we'll delete it.</p>
+
+    <h2>Children</h2>
+    <p>Choo! is made for grown-ups to use with children, not for children to use on their own. It doesn't collect personal data from anyone, children included.</p>
+
+    <h2>This website</h2>
+    <p>This website has no cookies, no analytics and no tracking, and loads nothing from other companies' servers: no fonts, scripts or embeds. The animations run in your browser and send nothing back. The company that hosts the site sees your IP address when your browser asks for a page, as any web host does.<span class="todo-note">TODO: name the web host and how long it keeps access logs, once chosen</span></p>
+
+    <h2>Your rights</h2>
+    <p>Under UK data protection law you can ask what personal data we hold about you, and ask us to correct or delete it. In practice the only thing we might hold is an issue report you chose to send, which we can find from when you sent it and what it said. Email <a class="todo" href="mailto:hello@choo.app">hello@choo.app</a>. If you're unhappy with how we've handled your data, you can complain to the <a href="https://ico.org.uk/make-a-complaint/">Information Commissioner's Office</a>.</p>
+
+    <h2>Changes</h2>
+    <p>If Choo! ever starts sending anything new, this page will change first, and the date at the top will say when.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-bottom" style="margin-top:0;border-top:0;padding-top:0">
+      <span>© 2026 Andrew Bennet. Choo! is independent, and isn't affiliated with or endorsed by Transport for London, Network Rail, National Rail or any train company.</span>
+      <span><a href="./">Home</a> · <a href="support.html">Help</a> · <a href="privacy.html">Privacy</a></span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
