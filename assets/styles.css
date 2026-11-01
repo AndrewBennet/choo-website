@@ -290,7 +290,7 @@ section { padding: 84px 0; }
   .in-view .scene .puff.p2 { animation-delay: .5s; }
   .in-view .scene .puff.p3 { animation-delay: 1s; }
   .in-view .scene .arm { animation: wave 1s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 100%; }
-  .in-view .scene .arm.a2 { animation-delay: .3s; }
+  .in-view .scene .arm.a2 { animation-delay: -.5s; } /* half a wave behind: the two arms swing opposite ways */
   .in-view .scene .wheel { animation: spin .5s linear infinite; transform-box: fill-box; transform-origin: center; }
 }
 @media (prefers-reduced-motion: reduce) { .scene .train-run { transform: translateX(380px); } }
