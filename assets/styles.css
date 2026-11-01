@@ -217,7 +217,7 @@ section { padding: 84px 0; }
 @media (prefers-reduced-motion: no-preference) {
   .in-view .drop-pin { animation: pin-drop 3.2s cubic-bezier(.3,1.5,.5,1) infinite; }
   .in-view .press-ring { animation: press 3.2s ease-out infinite; }
-  .in-view .wave-hand { animation: wave 1.4s ease-in-out infinite; transform-origin: 70% 80%; transform-box: fill-box; }
+  .in-view .wave-hand { animation: wave 1.4s ease-in-out infinite; transform-box: view-box; transform-origin: 96px 84px; } /* the wrist: the fingers swing most */
 }
 @keyframes pin-drop { 0%, 20% { transform: translateY(-60px); opacity: 0; } 34% { transform: translateY(0); opacity: 1; } 90% { opacity: 1; transform: translateY(0); } 100% { opacity: 0; } }
 @keyframes press { 0% { r: 4; opacity: .8; } 20% { r: 26; opacity: 0; } 100% { r: 26; opacity: 0; } }
