@@ -140,6 +140,14 @@ p { margin: 0 0 1em; }
 .cta-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 1.6em 0 1em; }
 .fine { font-size: .92rem; color: var(--ink-soft); }
 
+/* ---------- Sign-up form ---------- */
+.signup { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 1.6em auto 1em; max-width: 480px; }
+.signup input[type=email] {
+  flex: 1 1 220px; min-width: 0; font: inherit; color: var(--ink); background: var(--surface);
+  border: 2px solid var(--line); border-radius: 999px; padding: 13px 20px;
+}
+.signup input[type=email]:focus { outline: 3px solid color-mix(in srgb, var(--brand) 45%, transparent); outline-offset: 1px; border-color: var(--brand); }
+
 /* ---------- Hero ---------- */
 .hero { position: relative; overflow: hidden; padding: 56px 0 150px; isolation: isolate; }
 @media (max-width: 900px) { .hero { padding-bottom: 110px; } }
