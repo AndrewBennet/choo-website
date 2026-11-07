@@ -1,0 +1,19 @@
+# GitHub Pages builds the site with Jekyll: the pages without front matter (index.html, support.html,
+# privacy.html, assets/) are copied as they are; the blog is built from _posts/.
+title: Choo!
+description: A countdown to the next train past your spot.
+url: https://choo.express
+lang: en-GB
+permalink: /blog/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    disable: true
+plugins:
+  - jekyll-feed
+feed:
+  path: blog/feed.xml
+exclude:
+  - README.md
+  - CNAME

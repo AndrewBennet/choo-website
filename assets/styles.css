@@ -387,3 +387,16 @@ section { padding: 84px 0; }
 .clip-pair .activity { padding: 10px 12px; border-radius: 18px; font-size: .9rem; }
 .clip-pair .activity .t { font-size: 1.8rem; }
 @media (max-width: 560px) { .clip-pair .lock { max-width: 320px; } }
+
+/* Blog */
+.post-list { list-style: none; padding: 0; }
+.post-list li { padding: 18px 0; border-bottom: 1px solid var(--line); }
+.post-list h2 { margin: .15em 0 .3em; font-size: 1.35rem; }
+.post-list time, .post time { color: var(--ink-soft); font-size: .92rem; }
+.post img, .post video { max-width: 100%; height: auto; border-radius: 12px; }
+.post figure { margin: 1.4em 0; }
+.post figcaption { font-size: .92rem; opacity: .8; margin-top: .4em; }
+.post pre { overflow-x: auto; padding: 14px 16px; border-radius: 12px; background: var(--bg-2); font-size: .9rem; line-height: 1.45; }
+.post code { font-size: .92em; }
+.post :not(pre) > code { padding: .1em .35em; border-radius: 6px; background: var(--bg-2); }
+.post blockquote { margin: 1.2em 0; padding: .2em 1em; border-left: 4px solid var(--pin); }

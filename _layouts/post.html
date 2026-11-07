@@ -1,0 +1,29 @@
+---
+layout: base
+---
+<article>
+  <div class="page-hero">
+    <div class="wrap prose">
+      <span class="eyebrow"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time></span>
+      <h1>{{ page.title }}</h1>
+      {% if page.summary %}<p class="lede">{{ page.summary }}</p>{% endif %}
+    </div>
+  </div>
+  <div class="wrap prose post">
+    {{ content }}
+  </div>
+</article>
+
+<section class="final" aria-labelledby="get-title">
+  <div class="wrap">
+    <h2 id="get-title">Hear about the next one</h2>
+    <p class="lede center">Leave your email for new posts, and to hear when Choo! is on the App Store.</p>
+    <form class="signup" action="https://buttondown.com/api/emails/embed-subscribe/choo" method="post">
+      <label class="visually-hidden" for="signup-email">Your email address</label>
+      <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+      <input type="hidden" name="embed" value="1">
+      <button class="btn" type="submit">Tell me</button>
+    </form>
+    <p class="fine">We’ll email you to confirm. Unsubscribe any time. <a href="/privacy.html#updates">How we handle your email</a>.</p>
+  </div>
+</section>
