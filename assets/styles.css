@@ -387,3 +387,11 @@ section { padding: 84px 0; }
 .clip-pair .activity { padding: 10px 12px; border-radius: 18px; font-size: .9rem; }
 .clip-pair .activity .t { font-size: 1.8rem; }
 @media (max-width: 560px) { .clip-pair .lock { max-width: 320px; } }
+
+/* Press page: screenshots in a grid, each linking to its full-size file. */
+.press-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; margin: 1em 0 1.4em; padding: 0; list-style: none; }
+.press-grid li { margin: 0; }
+.press-grid a { display: block; text-decoration: none; color: var(--ink-soft); font-size: .88rem; }
+.press-grid img { display: block; width: 100%; height: auto; border-radius: 14px; box-shadow: var(--card-shadow); margin-bottom: 6px; }
+.press-icon { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+.press-icon img { width: 96px; height: 96px; }
