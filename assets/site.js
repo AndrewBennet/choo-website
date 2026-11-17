@@ -1,4 +1,4 @@
-// Choo! website: the little animations. Plain JS, no libraries.
+// Choo website: the little animations. Plain JS, no libraries.
 // Everything here is decoration: the page reads fine without it, and with prefers-reduced-motion
 // the app recordings stay as still pictures.
 (() => {
@@ -27,7 +27,7 @@
     n.textContent = now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
   });
   document.querySelectorAll('[data-soon]').forEach((n) => {
-    n.textContent = `Passing ${hhmm(new Date(Date.now() + Number(n.dataset.soon) * 60000))}`;
+    n.textContent = hhmm(new Date(Date.now() + Number(n.dataset.soon) * 60000));
   });
 
   /* ---------- Countdowns that tick: 0:09, 0:08 … Now! … and round again ---------- */
