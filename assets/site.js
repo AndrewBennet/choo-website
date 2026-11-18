@@ -108,3 +108,6 @@
   }
   reduce.addEventListener?.('change', () => location.reload());
 })();
+
+// Counts sign-ups (not who) in Plausible, the site's cookie-free visit counter.
+document.querySelectorAll('form.signup').forEach((f) => f.addEventListener('submit', () => window.plausible?.('Signup')));
