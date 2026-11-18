@@ -120,6 +120,8 @@ main { flex: 1 0 auto; }
 .nav .btn { padding: 9px 16px; color: #fff; }
 .nav .btn:hover { background: var(--brand); }
 @media (max-width: 720px) { .nav .hide-sm { display: none; } }
+/* The smallest phones: tighten the header so the brand and three links still fit on one line. */
+@media (max-width: 360px) { .site-header .wrap { padding-inline: 14px; gap: 8px; } .brand { font-size: 1.2rem; gap: 8px; } .nav { gap: 0; } .nav a { padding: 8px 7px; } }
 
 /* Scroll progress: a little train runs along the bottom of the header as you scroll. */
 .progress { position: absolute; left: 0; right: 0; bottom: -1px; height: 4px; pointer-events: none; }
