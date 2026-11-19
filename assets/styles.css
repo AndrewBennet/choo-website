@@ -350,6 +350,8 @@ section { padding: 84px 0; }
 /* ---------- Text pages (privacy, support) ---------- */
 .page-hero { padding: 56px 0 24px; background: linear-gradient(180deg, var(--sky-top), var(--bg)); }
 .prose { max-width: 760px; }
+/* Room before the footer on the text pages, as the home page’s sections have. */
+main > .wrap:last-child { padding-bottom: 72px; }
 .prose h2 { font-size: 1.6rem; margin-top: 1.8em; }
 .prose h3 { font-size: 1.15rem; margin-top: 1.4em; }
 .prose ul { padding-left: 1.2em; }

@@ -42,8 +42,8 @@
     <div class="wrap prose">
       <span class="eyebrow">Privacy policy</span>
       <h1>Your trains, not your data.</h1>
-      <p class="lede">Choo has no accounts, no ads and no analytics. It doesn’t collect personal data. To find the railway and its trains, the app sends the Choo server some places on the map, including roughly where you are while the map is open (if you’ve let it use your location), and the server doesn’t keep them. This page says exactly what the app sends, to whom, and when.</p>
-      <p class="fine">Last updated 18 November 2026. Applies to the Choo app for iPhone and iPad (including its widgets and Live Activities), the Choo server it talks to, and this website.</p>
+      <p class="lede">Choo has no accounts, no ads and no analytics, and doesn’t collect personal data. To show trains, the app sends our server places on the map, including roughly where you are if you’ve allowed it, and the server doesn’t keep them.</p>
+      <p class="fine">Last updated 19 November 2026. Covers the Choo app (with its widgets and Live Activities), the Choo server and this website.</p>
     </div>
   </div>
 
@@ -52,72 +52,66 @@
       <h2 style="margin-top:0">The short version</h2>
       <ul>
         <li><strong>No accounts.</strong> There’s nothing to sign up for, and Choo never asks for your name, email or phone number.</li>
-        <li><strong>No ads, analytics or tracking.</strong> The app contains no advertising or analytics code and doesn’t use Apple’s advertising identifier.</li>
-        <li><strong>Crash reports, only if you share them with app developers.</strong> If Choo crashes or freezes and you’ve chosen to share analytics with app developers in your device’s settings, iOS gives the app a technical report, which it sends to the Choo server so the problem can be fixed (<a href="#crash-reports">see below</a>). It contains nothing about you.</li>
-        <li><strong>Your location is used to find the railway beside you.</strong> On your device, it shows the spots near you and keeps a Lock Screen Live Activity up to date. While the map is open, the app sends the Choo server where you are, to about 100 metres, to get the railway tracks around you, so it can offer Trains Here when you’re beside one. While Trains Here is open, it sends where you’re standing, rounded to about 10 metres, to find the trains passing there. To show trains moving on the map, it sends the part of the map on screen, rounded to about half a kilometre. The server doesn’t record any of these. To show how long the walk to a spot is, the app asks Apple Maps, which gets where you are and where the spot is.</li>
-        <li><strong>Your spots are kept on your device.</strong> Where each one is goes with the requests for its trains, but not its name. If you follow one on your Lock Screen, the server keeps it only until that Live Activity ends. If you have unusual-train notifications on, the server keeps the spots they’re on for, with their names, so it can send them (see below). Your spots also go with an issue report if you send one.</li>
-        <li><strong>Issue reports are only sent if you send one.</strong> They’re used only to fix problems, and don’t say who you are.</li>
+        <li><strong>No ads or tracking.</strong> No advertising or analytics code, and no advertising identifier.</li>
+        <li><strong>Your location only finds trains.</strong> If you allow it, the app sends our server roughly where you are while the map or Trains Here is open. The server doesn’t record it.</li>
+        <li><strong>Your spots stay on your device.</strong> Where they are goes with the requests for their trains. The server keeps a spot only while you follow it on your Lock Screen or have alerts on for it.</li>
+        <li><strong>Reports only if you choose.</strong> Issue reports are sent when you tap Send; crash reports only if you share analytics with app developers.</li>
       </ul>
     </div>
 
     <h2>Who we are</h2>
-    <p>Choo is made by <a href="https://andrewbennet.com">Andrew Bennet</a>, an independent developer in the UK. You can get in touch at <a href="mailto:hello@choo.express">hello@choo.express</a>, including to ask what we hold about you, or to correct or delete it. If you’re unhappy with how we’ve handled your data, you can complain to the <a href="https://ico.org.uk/make-a-complaint/">Information Commissioner’s Office</a>.</p>
+    <p>Choo is made by <a href="https://andrewbennet.com">Andrew Bennet</a>, an independent developer in the UK. Email <a href="mailto:hello@choo.express">hello@choo.express</a> to get in touch, including to ask what we hold about you, or to correct or delete it. If you’re unhappy with how we’ve handled your data, you can complain to the <a href="https://ico.org.uk/make-a-complaint/">Information Commissioner’s Office</a>.</p>
 
-    <h2>What stays on your device</h2>
+    <h2>On your device</h2>
     <ul>
-      <li><strong>Your location.</strong> If you allow it, Choo uses your location on your device to show where you are on the map, to show and refresh the spots near you, and, while you follow a spot on your Lock Screen, to keep that Live Activity running and up to date as you walk there. To find the railway and its trains, it also sends the Choo server roughly where you are, and the part of the map you’re looking at, and it asks Apple Maps for walking times, as described below. It’s only sent while Choo is on screen, and to no one else. You can turn it off in Settings › Privacy &amp; Security › Location Services; Choo still works, but won’t know which spots are near you.</li>
-      <li><strong>Your spots</strong> (their names, where they are and how they’re set up). They’re kept in the app and shared with its own widgets. Where each one is, and the lines chosen for it, go with the requests for its trains (below).</li>
-      <li><strong>Notifications</strong> about unusual trains are sent by the Choo server through Apple’s push service, whenever one is due, if you allow notifications and have them on. For that, the server keeps your device’s push token and the spots they’re on for (<a href="#sends">below</a>). Turn them off in Choo’s Settings, or for one spot with Unusual-Train Alerts in its menu, and the server deletes them.</li>
-      <li><strong>A record of the last two hours.</strong> So a problem can be looked into after it happens, the app keeps a note of what the server sent it and what it showed on screen over the last two hours (up to about 20 MB), on your device. Anything older is deleted. It’s only sent if you send an issue report.</li>
+      <li><strong>Your location</strong>, if you allow it: to show where you are, find spots near you and keep a followed Live Activity up to date. Turn it off in Settings › Privacy &amp; Security › Location Services; Choo still works.</li>
+      <li><strong>Your spots</strong>: their names, places and how they’re set up, shared only with Choo’s widgets.</li>
+      <li><strong>The last two hours</strong> of what the server sent and what the app showed (up to about 20 MB), so a problem can be looked into. It only leaves your device in an issue report.</li>
     </ul>
     <p>Deleting the app deletes all of this.</p>
 
     <h2 id="sends">What the app sends, and to whom</h2>
-    <p>To show train times, the app has to ask for them. These requests are about trains and places on the railway. Some are about where you are: the tracks around you while the map is open, and where you’re standing while Trains Here is open. They don’t include your name or any identifier for you or your device, apart from the push tokens and the random id used for a followed Live Activity or for unusual-train notifications (below). The Choo server doesn’t keep a log of them, and doesn’t write the places asked about to disk.</p>
+    <p>Requests carry no name or identifier for you or your device, except the push tokens for Live Activities and alerts. The Choo server doesn’t log them, or write the places asked about to disk.</p>
     <div class="table-scroll stack-sm">
       <table>
         <thead><tr><th scope="col">Who</th><th scope="col">What the app sends</th><th scope="col">Why</th></tr></thead>
         <tbody>
-          <tr><td><strong>The Choo server</strong> (ours, hosted in London)</td><td data-label="What the app sends">Where your spots are and the lines chosen for them. While the map or Trains Here is open, roughly where you are and the part of the map on screen. If you follow a spot or train on your Lock Screen, or turn on unusual-train notifications: that spot or train, its settings, and a push token from Apple. Crash reports, if you share analytics with app developers. The app’s build number.</td><td data-label="Why">To show the trains at your spots and around you, and where they are. To keep Live Activities and notifications going when Choo isn’t open: the server keeps what it needs for these only while they’re on, then deletes it. To fix crashes.</td></tr>
-          <tr><td><strong>Transport for London</strong> (TfL Unified API)</td><td data-label="What the app sends">Tube, DLR, Overground and Elizabeth line names and stations: when you tap one of their trains, open or add a spot on one of their lines, or if the Choo server can’t show their trains on the map. Never your location.</td><td data-label="Why">To get those lines’ routes and live times directly from TfL.</td></tr>
-          <tr><td><strong>Wikipedia</strong> (and Wikimedia, for the picture)</td><td data-label="What the app sends">The name of a type of train, e.g. "Class 450".</td><td data-label="Why">To show a picture and a line about that type of train.</td></tr>
-          <tr><td><strong>Apple</strong> (Apple Maps)</td><td data-label="What the app sends">Map tiles. Anything you type into search, with the part of the map on screen. Where you put a new spot, to suggest a name from the street. For walking times to your spots: where you are and where each spot is.</td><td data-label="Why">To draw the map, find places and postcodes, name new spots, and show how long the walk is. Apple handles this under <a href="https://www.apple.com/legal/privacy/">its own privacy policy</a>.</td></tr>
+          <tr><td><strong>The Choo server</strong> (ours, hosted in London)</td><td data-label="What the app sends">Where your spots are and their lines. Roughly where you are and the part of the map on screen, while the map or Trains Here is open. For Live Activities and alerts: the spot or train, its settings and a push token. Crash reports, if you share them. The app’s build number.</td><td data-label="Why">To show trains and where they are, to keep Live Activities and alerts going (kept only while they’re on), and to fix crashes.</td></tr>
+          <tr><td><strong>Transport for London</strong></td><td data-label="What the app sends">Tube, DLR, Overground and Elizabeth line names and stations, when you look at their trains or spots. Never your location.</td><td data-label="Why">For those lines’ routes and live times.</td></tr>
+          <tr><td><strong>Wikipedia</strong></td><td data-label="What the app sends">The name of a type of train, e.g. “Class 450”.</td><td data-label="Why">For its picture and a line about it.</td></tr>
+          <tr><td><strong>Apple Maps</strong></td><td data-label="What the app sends">Map tiles, what you search for, where you put a new spot, and for walking times, where you are and where your spots are.</td><td data-label="Why">To draw the map, search, name new spots and time the walk, under <a href="https://www.apple.com/legal/privacy/">Apple’s privacy policy</a>.</td></tr>
         </tbody>
       </table>
     </div>
 
     <h3>IP addresses</h3>
-    <p>Like any request on the internet, each one carries your internet (IP) address, which the service receiving it can see. The Choo server uses it only to limit how many requests one address can make, so the service stays up for everyone. It’s held only in the server’s memory for that, never logged, and discarded when the server restarts or needs the room. The exceptions: while you follow a spot or a train on your Lock Screen, or have unusual-train notifications on, the server keeps a salted hash of the address with them, on its disk, to limit how many one address can have, and deletes it with them. The server doesn’t keep a log of the requests themselves. The company that hosts the server processes requests only to deliver them. TfL, Wikipedia and Apple see your IP address when the app contacts them, under their own policies.</p>
+    <p>Every request carries your IP address. The Choo server uses it only to limit how many requests one address can make: it’s held in memory, never logged. While you follow a spot or have alerts on, the server keeps a salted hash of it with them, and deletes it with them. Our hosting provider handles requests only to deliver them. TfL, Wikipedia and Apple see your IP address under their own policies.</p>
 
     <h2 id="issue-reports">Issue reports</h2>
-    <p>If something looks wrong, you can choose "Report an Issue" (from Settings, from a spot or a train, or by shaking your device if you’ve turned that on). Nothing is sent until you write a note and tap <strong>Send</strong>. If it can’t be sent straight away (no signal on a footbridge, say), it’s saved on your device and sent the next time Choo opens.</p>
-    <p>A report contains:</p>
+    <p>Nothing is sent until you write a note and tap <strong>Send</strong>. With no signal, it waits on your device until Choo next opens. A report contains:</p>
     <ul>
-      <li>the last two hours of what the app received from the Choo server (and from TfL, if it asked) and what it showed on screen, including when you opened spots and trains, and the positions of spots, of the map and, if you used Trains Here, of where you were standing, that those requests already contained;</li>
-      <li>your note, the kind of report you chose, and the spot and train it’s about, if you pick them;</li>
-      <li>a screenshot of the app, unless you choose "None";</li>
-      <li>your saved spots, with their names, where they are and how they’re set up;</li>
-      <li>the app’s settings, such as the map’s look, your notification settings and which spots have them off, and whether Reduce Motion is on;</li>
-      <li>the app’s version and build, your device’s model, its iOS version, its language, region and time zone setting, and whether Choo is allowed to use your location (not where you are).</li>
+      <li>your note, and the spot or train it’s about, if you pick one;</li>
+      <li>a screenshot, unless you choose “None”;</li>
+      <li>the app’s last two hours, which can include places on the map and where Trains Here looked;</li>
+      <li>your spots and the app’s settings;</li>
+      <li>your device’s model, iOS version, language, region and time zone.</li>
     </ul>
-    <p>It doesn’t contain your location as such, an account, your name or contact details, unless you type them into the note. Please don’t. But the screenshot can show where you are on the map, and the requests above can show roughly where you were: the parts of the map, if it was following you, and the places Trains Here asked about.</p>
-    <p>Reports are kept on the Choo server’s disk, as sent, so they can be read to find and fix problems. They’re read only for that, and deleted after 60 days. To help read them, reports may be looked over by an AI assistant. They aren’t shared with anyone else. If you’d like a report deleted sooner, email us with roughly when you sent it and what your note said, and we’ll delete it.</p>
+    <p>It doesn’t include your name or contact details unless you type them in, so please don’t. Reports are read only to fix problems, may be looked over by an AI assistant, aren’t shared with anyone else, and are deleted after 60 days. To have one deleted sooner, email us with roughly when you sent it.</p>
 
     <h2 id="crash-reports">Crash and performance reports</h2>
-    <p>If you’ve turned on <strong>Share With App Developers</strong> (in your device’s Settings, under Privacy &amp; Security, then Analytics &amp; Improvements), iOS gives each app a technical report when it crashes, freezes, or uses an unusual amount of battery or storage, usually the next day. Choo sends these to the Choo server so we can find and fix the problem. If you haven’t turned it on, iOS gives the app nothing and nothing is sent.</p>
-    <p>A report contains where in Choo’s code the problem happened, the kind of problem, and the app’s version and build, your device’s model, its iOS version and its region setting. It doesn’t contain your location, your spots, your name or any identifier for you or your device. Reports are kept for at most 60 days, and are read only to fix problems, in the same way as issue reports. They aren’t shared with anyone else.</p>
+    <p>If you’ve turned on <strong>Share With App Developers</strong> (Settings › Privacy &amp; Security › Analytics &amp; Improvements), iOS gives Choo a technical report when it crashes, freezes or uses unusual battery or storage, and Choo sends it to our server. It says where in the code the problem was, with the app and iOS versions, device model and region: nothing about you. Reports are kept for at most 60 days and read only to fix problems.</p>
 
     <h2>Children</h2>
-    <p>Choo is made for grown-ups to use with children, not for children to use on their own. It doesn’t collect personal data from anyone, children included.</p>
+    <p>Choo is made for grown-ups to use with children, not for children on their own. It doesn’t collect personal data from anyone.</p>
 
     <h2 id="updates">Emails from Choo</h2>
-    <p>If you leave your email address on this website to hear from Choo, it’s sent to <a href="https://buttondown.com">Buttondown</a>, the service we use to send those emails, under <a href="https://buttondown.com/legal/privacy">its privacy policy</a>. Like any website, Buttondown also sees your IP address and browser when the form is sent. Buttondown emails you first to confirm it’s your address; until you confirm, you won’t get anything else. We use your address only to email you about Choo (when it’s out, then the odd blog post and news), and never share or sell it. You can unsubscribe with the link in any email, and we won’t email you again; if you’d like your address deleted altogether, email us and we will. Nothing about the app is linked to it.</p>
+    <p>If you sign up on this website, your email address goes to <a href="https://buttondown.com">Buttondown</a>, which sends our emails (<a href="https://buttondown.com/legal/privacy">its privacy policy</a>). You’ll get a confirmation email first. We only email you about Choo, never share or sell your address, and you can unsubscribe from any email, or ask us to delete it.</p>
 
     <h2>This website</h2>
-    <p>This website has no cookies and doesn’t track you. To see how many people visit, it uses <a href="https://plausible.io">Plausible</a>, an EU-based counter that doesn’t use cookies or store your IP address, and counts visits without knowing who you are: which page, the site that sent you, and your rough country, browser and device type. It also counts sign-ups and links followed off the site. Read <a href="https://plausible.io/data-policy">Plausible’s data policy</a>. Apart from that it loads nothing from other companies’ servers: no fonts or embeds. The sign-up form sends your email address to Buttondown only when you submit it. The animations run in your browser and send nothing back. Like any web host, the one that serves this site sees your IP address when your browser asks for a page.</p>
+    <p>No cookies and no tracking. <a href="https://plausible.io">Plausible</a> counts visits without cookies or storing your IP address: the page, the site that sent you, and your rough country, browser and device type, plus sign-ups and links followed off the site (<a href="https://plausible.io/data-policy">its data policy</a>). Like any web host, ours sees your IP address when your browser asks for a page.</p>
 
     <h2>Changes</h2>
-    <p>If Choo ever starts sending anything new, this page will change first, and the date at the top will say when.</p>
+    <p>If Choo starts sending anything new, this page will change first.</p>
   </div>
 </main>
 
