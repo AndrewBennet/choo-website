@@ -386,10 +386,12 @@ section { padding: 84px 0; }
 .app-clip[data-clip="hero"] { background-image: url(media/hero.webp); }
 .app-clip[data-clip="watch"] { background-image: url(media/watch.webp); }
 .app-clip[data-clip="train"] { background-image: url(media/train.webp); }
+.app-clip[data-clip="explore"] { background-image: url(media/explore.webp); }
 @media (prefers-color-scheme: dark) {
   .app-clip[data-clip="hero"] { background-image: url(media/hero-dark.webp); }
   .app-clip[data-clip="watch"] { background-image: url(media/watch-dark.webp); }
   .app-clip[data-clip="train"] { background-image: url(media/train-dark.webp); }
+  .app-clip[data-clip="explore"] { background-image: url(media/explore-dark.webp); }
 }
 
 /* Beside the watched spot, the Lock Screen is drawn smaller. */
