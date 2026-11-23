@@ -413,3 +413,9 @@ main > .wrap:last-child { padding-bottom: 72px; }
 .press-grid img { display: block; width: 100%; height: auto; filter: drop-shadow(0 4px 10px rgba(70, 45, 10, .18)); margin-bottom: 6px; }
 .press-icon { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
 .press-icon img { width: 96px; height: 96px; }
+
+/* ---------- App Store badge (Apple's artwork, unmodified; clear space of a quarter of its height) ---------- */
+.store-badge { display: inline-block; line-height: 0; border-radius: 9px; }
+.store-badge img { height: 54px; width: auto; display: block; }
+.store-badge:focus-visible { outline: 3px solid var(--brand); outline-offset: 4px; }
+.cta-row:has(.store-badge) { gap: 14px; }
