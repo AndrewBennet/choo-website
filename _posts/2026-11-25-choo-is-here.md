@@ -38,5 +38,3 @@ Choo’s server follows every train in Great Britain using National Rail’s fee
 Choo is made by one person, and I'm limited on how many trains I can check! If you spot a timing that’s out, tell me from the app’s Report an Issue or the [support page](https://choo.express/support.html).
 
 Now, off to find a bridge. Ready, steady… Choo!
-
-[Pre-order Choo on the App Store](https://apps.apple.com/gb/app/choo-live-train-tracker/id6828141748)
