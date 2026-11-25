@@ -33,7 +33,7 @@ Our server follows every train in Great Britain using National Rail’s feed, Ne
 
 <!-- If you’d like the full story, with diagrams of signals, berths and why a junction in Perthshire was once placed in London, read [How Choo predicts when a train will pass your bridge](/blog/how-choo-works/). -->
 
-## Thank you
+## Spotted a wrong time?
 
 Choo is made by one person, and I'm limited on how many trains I can check! If you spot a timing that’s out, tell me from the app’s Report an Issue or the [support page](https://choo.express/support.html).
 
