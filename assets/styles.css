@@ -431,4 +431,6 @@ main > .wrap:last-child { padding-bottom: 72px; }
 .post pre { overflow-x: auto; padding: 14px 16px; border-radius: 12px; background: var(--bg-2); font-size: .9rem; line-height: 1.45; }
 .post code { font-size: .92em; }
 .post :not(pre) > code { padding: .1em .35em; border-radius: 6px; background: var(--bg-2); }
+.feed-link { display: inline-flex; vertical-align: -2px; margin-left: 6px; color: inherit; opacity: .8; }
+.feed-link:hover, .feed-link:focus-visible { opacity: 1; }
 .post blockquote { margin: 1.2em 0; padding: .2em 1em; border-left: 4px solid var(--pin); }
