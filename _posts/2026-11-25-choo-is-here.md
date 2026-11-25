@@ -9,7 +9,7 @@ Hello, and welcome to the Choo blog. Choo is available to pre-order now on the [
 
 I have a toddler who loves watching trains. So we spend a lot of time on a footbridge that runs over our local rail line, waiting.
 
-Once a train has passed, she immediately wants the next one ("more!"). Looking up departures or arrivals at the nearest station doesn't fully answer the question: we're not at the station, and half the trains that came past weren’t on any board at all: the fast ones that don’t stop, freight trains, and some other unusual ones. Sometimes we’d wait ten minutes for nothing; sometimes one would rush past while we were looking the other way.
+Once a train has passed, she immediately wants the next one ("more!"). Looking up departures or arrivals at the nearest station doesn't fully answer the question: we're not at the station, and half the trains that come past aren’t on any board at all: the fast ones that don’t stop, freight trains, and some other unusual ones. Sometimes we’d wait ten minutes for nothing; sometimes one would rush past while we were looking the other way.
 
 So I built the thing I wanted: a countdown to the next train past the exact place we were standing.
 
