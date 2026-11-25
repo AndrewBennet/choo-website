@@ -3,7 +3,7 @@ title: "Choo is here: never miss the next train past your bridge"
 summary: "I built Choo so my toddler and I would know when the next train was coming past our bridge. Here’s what it does, and how it works it out."
 ---
 
-Hello, and welcome to the Choo blog. This is the first post, and it comes with some news: Choo is available to pre-order now on the [App Store](https://apps.apple.com/gb/app/choo-live-train-tracker/id6828141748) for iPhone, and it’s released on 30 November.
+Hello, and welcome to the Choo blog. Choo is available to pre-order now on the [App Store](https://apps.apple.com/gb/app/choo-live-train-tracker/id6828141748) for iPhone, and it’s released on 30 November.
 
 ## Why I made it
 
