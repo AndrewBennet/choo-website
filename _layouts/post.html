@@ -1,0 +1,49 @@
+---
+layout: base
+---
+<article>
+  <div class="page-hero">
+    <div class="wrap prose">
+      <span class="eyebrow"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time> · By <a href="https://andrewbennet.com">Andrew Bennet</a></span>
+      <h1>{{ page.title }}</h1>
+      {% if page.summary %}<p class="lede">{{ page.summary }}</p>{% endif %}
+    </div>
+  </div>
+  <div class="wrap prose post">
+    {{ content }}
+  </div>
+</article>
+
+<section class="final" aria-labelledby="get-title">
+  <div class="wrap">
+    <img class="icon" src="/assets/icon.svg" alt="The Choo app icon" width="104" height="104">
+    <h2 id="get-title" style="margin-top:.6em">Ready, steady… Choo!</h2>
+    <p class="lede center">Choo is on the App Store for iPhone and iPad. It’s free to download.</p>
+    <div class="cta-row"><a class="store-badge" href="https://apps.apple.com/gb/app/choo-live-train-tracker/id6828141748"><img src="/assets/app-store-badge.svg" alt="Download on the App Store" width="162" height="54"></a></div>
+    <p class="center" style="margin-top:2em">Want the next post? Leave your email.</p>
+    <form class="signup" action="https://buttondown.com/api/emails/embed-subscribe/choo" method="post">
+      <label class="visually-hidden" for="signup-email">Your email address</label>
+      <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+      <input type="hidden" name="embed" value="1">
+      <button class="btn" type="submit">Tell me</button>
+    </form>
+    <p class="fine">We’ll email you to confirm, then with the odd blog post and news. Unsubscribe any time. <a href="/privacy.html#updates">How we handle your email</a>.</p>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.summary | default: site.description | strip_html | jsonify }},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+  "image": {{ page.image | default: '/assets/og.png' | absolute_url | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "mainEntityOfPage": {{ page.url | absolute_url | jsonify }},
+  "inLanguage": "en-GB",
+  "author": { "@type": "Person", "name": "Andrew Bennet", "url": "https://andrewbennet.com" },
+  "publisher": { "@type": "Person", "name": "Andrew Bennet", "url": "https://andrewbennet.com" }
+}
+</script>
