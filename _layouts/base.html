@@ -35,7 +35,7 @@
     <a class="brand" href="/" aria-label="Choo! home"><img src="/assets/icon.svg" alt="" width="36" height="36">Choo!</a>
     <nav class="nav" aria-label="Main">
       <a class="hide-sm" href="/">Home</a>
-      <a href="/blog/"{% if page.url == "/blog/" %} aria-current="page"{% endif %}>Blog</a>
+      <a href="/blog/"{% if page.url == "/blog/" %} aria-current="page"{% elsif page.url contains "/blog/" %} aria-current="true"{% endif %}>Blog</a>
       <a href="/support.html">Help</a>
       <a href="/press.html">Press</a>
       <a class="hide-sm" href="/privacy.html">Privacy</a>

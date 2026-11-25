@@ -116,7 +116,7 @@ main { flex: 1 0 auto; }
 .nav { margin-left: auto; display: flex; gap: 4px; align-items: center; }
 .nav a { color: var(--ink); text-decoration: none; font-weight: 700; padding: 8px 12px; border-radius: 999px; font-size: .98rem; }
 .nav a:hover { background: var(--bg-2); }
-.nav a[aria-current="page"] { background: var(--bg-2); }
+.nav a[aria-current="page"], .nav a[aria-current="true"] { background: var(--bg-2); }
 .nav .btn { padding: 9px 16px; color: #fff; }
 .nav .btn:hover { background: var(--brand); }
 @media (max-width: 720px) { .nav .hide-sm { display: none; } }
