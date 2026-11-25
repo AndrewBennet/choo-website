@@ -22,4 +22,3 @@ feed:
   path: blog/feed.xml
 exclude:
   - README.md
-  - CNAME
